@@ -1,0 +1,30 @@
+:root {
+  /*Color palette*/
+  --primary-900: #010304;
+  --primary-700: #364d63;
+  --primary-600: #476685;
+  --primary-500: #5980a6;
+  --primary-400: #7a99b8;
+  --primary-300: #9cb3c9;
+  --primary-200: #bdccdb;
+  --primary-100: #dee5ed;
+  --primary-50: #f0f4f7;
+
+  --primary: #002e4c;
+  --secondary: #ffffff;
+  --acento: #009389;
+  --acento-hover: #33b9b0;
+
+
+}
+
+* {
+  /*Font family*/
+  font-family: "IBM Plex Sans", sans-serif, Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* general section  */
+
+section {
+  display: none;
+}
