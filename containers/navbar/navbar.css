@@ -1,20 +1,21 @@
-nav {
+.bg-medac{
     background-color: var(--primary);
 }
 
 
-
-.nav-item  {
+.nav-item {
     color: var(--primary);
     font-weight: bold;
     align-items: center;
     padding: 0.5rem 0;
-  }
-  .nav-item a {
+}
+
+.nav-item a {
     text-decoration: none;
     color: var(--primary);
-  }
-  .nav-item:hover a {
+}
+
+.nav-item:hover a {
     text-decoration: none;
     color: var(--primary-hover);
-  }
+}
