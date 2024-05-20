@@ -11,6 +11,7 @@
   --primary-50: #f0f4f7;
 
   --primary: #002e4c;
+  --primary-hover: #125988 ;
   --secondary: #ffffff;
   --acento: #009389;
   --acento-hover: #33b9b0;
@@ -24,7 +25,6 @@
 }
 
 /* general section  */
-
 section {
   display: none;
 }

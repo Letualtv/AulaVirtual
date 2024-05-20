@@ -7,37 +7,56 @@
     <link
       rel="icon"
       href="assets\logo-vector\MEDAC_isotipo_azul_RGB.svg"
-      type="image/x-icon"
-    />
+      type="image/x-icon"/>
     <link
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
       rel="stylesheet"
-      type="text/css"
-    />
+      type="text/css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
 
     <!-- ENLACE ESTILOS -->
     <link rel="stylesheet" href="containers/inicio/inicio.css" />
     <link rel="stylesheet" href="containers/calendario/calendario.css" />
     <link rel="stylesheet" href="styles/app.css" />
-    <link rel="stylesheet" href="styles/navbar.css" />
+    <!-- <link rel="stylesheet" href="styles/navbar.css" /> -->
+    <link rel="stylesheet" href="containers/navbar/navbar.css" />
+
   </head>
 
-  <body class="container-fluid">
+
+  <body id="body">
+
+    <!-- Boton desplazamiento -->
+    <div id="div-totop" class="cmn-divfloat">
+      <a href="#body" class="btn cmn-btncircle">
+        <i class="fa fa-arrow-up align-middle text-white"></i>
+      </a>
+    </div>
+  
+    <!-- ENLACE COMPONENTES -->
+    <include src="containers/navbar/navbar.html"></include> 
+
+  
+  
+  
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+  </body>
+
+  <!-- <body class="container-fluid">
     <div class="row">
-      <!-- <nav class="row wrapper min-vh-100 flex-column flex-sm-row">
+      <nav class="row wrapper min-vh-100 flex-column flex-sm-row">
       <ul>
         <li><a href="#inicio">Inicio</a></li></li>
         <li><a href="#calendario">Calendario</a></li>
@@ -45,7 +64,7 @@
       </ul>
     </nav> -->
 
-      <nav class="d-block col-2" style="height: 100vh;">
+      <!-- <nav class="d-block col-2" style="height: 100vh;">
         <div class="align-self-start mx-auto">
           <a class="d-lg-block d-none justify-content-center logo1" href="#"
             ><img
@@ -106,11 +125,11 @@
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> -->
 
       <!-- ENLACE COMPONENTES -->
 
-      <section id="inicio" class="col-10">
+      <!-- <section id="inicio" class="col-10">
         <include src="containers\inicio\inicio.html"></include>
       </section>
       <section id="calendario" class="col-10">
@@ -134,7 +153,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
-    ></script>
-  </body>
+    ></script> 
+  </body> -->
+
+
   <!-- Desarrollado por Antonio y Julián -->
+
 </html>

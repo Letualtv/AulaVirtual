@@ -1,4 +1,4 @@
-const enlaces = document.querySelectorAll('nav a');
+/* const enlaces = document.querySelectorAll('nav a');
 
 enlaces.forEach(enlace => {
   enlace.addEventListener('click', (e) => {
@@ -20,4 +20,4 @@ function mostrarSeccion(idSeccion) {
 
   const seccionActiva = document.querySelector(idSeccion);
   seccionActiva.style.display = 'block';
-}
+} */

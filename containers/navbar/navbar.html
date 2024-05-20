@@ -1,0 +1,114 @@
+<!-- Navbar -->
+<nav class="navbar bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        class="col-12 d-flex mx-auto"
+        style="max-width: 200px;"
+        src="assets\logo-vector\MEDAC_imagotipo_horiz_azul_RGB.svg"
+        alt="Logotipo Medac"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+       <!--  <h5 class="justify-content-center" id="offcanvasNavbarLabel">
+          Aula virtual
+        </h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <ul>
+        <div class="pt-5">
+          <img
+            class="mx-auto d-block"
+            style="max-width: 200px;"
+            src="assets\logo-vector\MEDAC_isologo_aureo_azul_RGB.svg"
+            alt="Logotipo Medac"
+          />
+        </div>
+      </ul>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a
+              class="nav-link mx-2"
+              aria-current="page"
+              href="index.html"
+            >
+              <i class="fa-solid fa-house fa-1x mx-2"></i>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">
+              <i class="fa-solid fa-user fa-1x mx-2"></i>
+              Mi cuenta
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">
+              <i class="fa-solid fa-school fa-1x mx-2"></i>
+              Metaverso
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#">
+              <i class="fa-solid fa-phone fa-1x mx-2"></i>
+              Contactar
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle mx-2"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-book fa-1x mx-2"></i>
+              Documentación
+            </a>
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item mx-4" href="#">Tablón de anuncios</a>
+              </li>
+              <li><a class="dropdown-item mx-4" href="#">Tutoriales</a></li>
+              <li><a class="dropdown-item mx-4" href="#">Normativa</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <br/>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </div>
+</nav>
