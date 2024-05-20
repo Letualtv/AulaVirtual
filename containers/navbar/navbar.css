@@ -2,6 +2,10 @@
     background-color: var(--primary);
 }
 
+.btn-acento {
+    color: var(--acento);
+}
+
 .nav-item {
     color: var(--primary);
     font-weight: bold;
