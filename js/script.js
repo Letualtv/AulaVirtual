@@ -1,4 +1,4 @@
-// JavaScript
+/* // JavaScript
 const likeButton = document.getElementById('like-button');
 const likeCountElement = document.getElementById('like-count');
 
@@ -14,3 +14,4 @@ likeButton.addEventListener('click', () => {
     // Store the updated like count in localStorage
     localStorage.setItem('likeCount', JSON.stringify(likeCount));
 });
+ */
