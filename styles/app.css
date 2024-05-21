@@ -22,6 +22,14 @@
 * {
   /*Font family*/
   font-family: "IBM Plex Sans", sans-serif, Calibri, "Trebuchet MS", sans-serif;
+
+.h1c {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+
 }
 
 /* general section  */

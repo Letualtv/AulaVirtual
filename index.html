@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,13 +28,32 @@
     <link rel="stylesheet" href="containers/inicio/inicio.css" />
     <link rel="stylesheet" href="containers/calendario/calendario.css" />
     <link rel="stylesheet" href="styles/app.css" />
-    <!-- <link rel="stylesheet" href="styles/navbar.css" /> -->
     <link rel="stylesheet" href="containers/navbar/navbar.css" />
 
   </head>
 
 
   <body id="body">
+
+    <!-- Cerrar sesión -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content   ">
+          <div class="modal-header d-flex align-items-center bg-danger-50">
+            <i class="fa-solid fa-circle-exclamation fa-2x pe-3 text-danger"></i> <h5 class="modal-title fw-bolder" id="staticBackdropLabel">¿Desea cerrar la sesión?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Si cierra sesión deberá inciarla de nuevo a través de Canva y podría perder los cambios no guardados.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger">Cerrar sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Boton desplazamiento -->
     <div id="div-totop" class="cmn-divfloat">
@@ -45,116 +64,16 @@
   
     <!-- ENLACE COMPONENTES -->
     <include src="containers/navbar/navbar.html"></include> 
+<div class="mt-5"><include  src="containers/inicio/inicio.html"></include> </div>
 
-  
-  
-  
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <script src="https://unpkg.com/htmlincludejs"></script>
-  </body>
-
-  <!-- <body class="container-fluid">
-    <div class="row">
-      <nav class="row wrapper min-vh-100 flex-column flex-sm-row">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li></li>
-        <li><a href="#calendario">Calendario</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav> -->
-
-      <!-- <nav class="d-block col-2" style="height: 100vh;">
-        <div class="align-self-start mx-auto">
-          <a class="d-lg-block d-none justify-content-center logo1" href="#"
-            ><img
-              class="py-4 col-12"
-              src="assets\logo-vector\MEDAC_imagotipo_horiz_blanco_RGB.svg"
-              alt="Logotipo Medac"
-          /></a>
-          <a class="d-lg-none justify-content-center logo2" href="#"
-            ><img
-              class="col-12 d-flex mx-auto"
-              style="max-width: 100px;"
-              src="assets\logo-vector\MEDAC_isotipo_blanco_RGB.svg"
-              alt="Logotipo Medac"
-          /></a>
-
-          <ul class="navbar-nav gap-2">
-            <li class="nav-item btn btn-outline-light">
-              <i class="fa-solid fa-house fa-2x"></i
-              ><a class="d-lg-block d-none" aria-current="page" href="#inicio"
-                >Inicio</a
-              >
-            </li>
-
-            <li
-              href="#calendario"
-              class="nav-item btn btn-outline-light d-grid"
-            >
-              <i class="fa-solid fa-school fa-2x"></i
-              ><a class="d-lg-block d-none">Metaverso</a>
-            </li>
-            <li class="nav-item btn btn-outline-light">
-              <i class="fa-solid fa-book fa-2x"></i
-              ><a class="d-lg-block d-none" href="#">Documentación</a>
-            </li>
-            <li class="nav-item btn btn-outline-light">
-              <i class="fa-solid fa-user fa-2x"></i>
-              <a
-                class="d-lg-block d-none"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Mi cuenta
-              </a>
-            </li>
-            <li class="nav-item btn btn-outline-light">
-              <i class="fa-solid fa-circle-question fa-2x"></i>
-              <a
-                class="d-lg-block d-none"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Ayuda
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
-
-      <!-- ENLACE COMPONENTES -->
-
-      <!-- <section id="inicio" class="col-10">
-        <include src="containers\inicio\inicio.html"></include>
-      </section>
-      <section id="calendario" class="col-10">
-        <include src="containers\calendario\calendario.html"></include>
-      </section>
-
-      <section id="contacto" class="col-10">
-        <include src="containers\inicio\inicio.html"></include>
-      </section>
-    </div>
-
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/htmlincludejs"></script>
-
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script> 
-  </body> -->
+  </body> 
 
 
   <!-- Desarrollado por Antonio y Julián -->
