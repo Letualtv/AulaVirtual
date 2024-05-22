@@ -25,16 +25,19 @@
       crossorigin="anonymous"/>
 
     <!-- ENLACE ESTILOS -->
-    <link rel="stylesheet" href="containers/inicio/inicio.css" />
-    <link rel="stylesheet" href="containers/metaverso/metaverso.css" />
     <link rel="stylesheet" href="styles/app.css" />
     <link rel="stylesheet" href="containers/navbar/navbar.css" />
+    <link rel="stylesheet" href="styles/metaverso.css" />
 
   </head>
 
 
   <body id="body">
 
+
+    
+
+    
     <!-- Cerrar sesión -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog ">
@@ -53,17 +56,11 @@
         </div>
       </div>
     </div>
-
-    <!-- Boton desplazamiento -->
-    <div id="div-totop" class="cmn-divfloat">
-      <a href="#body" class="btn cmn-btncircle">
-        <i class="fa fa-arrow-up align-middle text-white"></i>
-      </a>
-    </div>
   
     <!-- ENLACE COMPONENTES -->
     <include src="containers/navbar/navbar.html"></include> 
-    <div id="include-container" class="mt-5"><include src="containers/inicio/inicio.html"></include></div>
+    <section class="mt-5">
+    
   
     <!-- SCRIPTS -->
     <script src="https://unpkg.com/htmlincludejs"></script>
@@ -72,31 +69,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script> 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-          // Cargar dinámicamente el contenido de inicio.html
-          fetch('containers/inicio/inicio.html')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('include-container').innerHTML = data;
 
-                  // Después de incluir el contenido, agregar el event listener
-                  const likeButton = document.getElementById('like-button');
-                  const likeCount = document.getElementById('like-count');
-
-                  if (likeButton && likeCount) {
-                      likeButton.addEventListener('click', function() {
-                          console.log('Botón clicado');
-                          likeCount.textContent = parseInt(likeCount.textContent) + 1;
-                      });
-                  } else {
-                      console.error('No se encontraron los elementos con los IDs especificados.');
-                  }
-              })
-              .catch(error => console.error('Error cargando el contenido:', error));
-      });
-  </script>
-
+    
   </body> 
 
 

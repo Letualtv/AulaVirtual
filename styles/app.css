@@ -36,3 +36,21 @@
 section {
   display: none;
 }
+
+.flicker {
+  animation-name: flicker;
+  animation-duration: 1.7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flicker {
+  0% {opacity: 1;}
+  25% {opacity: 0.5;}
+  50% {opacity: 1;}
+  75% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+  
+
+
+        
