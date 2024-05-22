@@ -23,6 +23,11 @@
   /*Font family*/
   font-family: "IBM Plex Sans", sans-serif, Calibri, "Trebuchet MS", sans-serif;
 
+  .blue {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
 .h1c {
   font-weight: bold;
   font-size: 1.5rem;
@@ -33,9 +38,7 @@
 }
 
 /* general section  */
-section {
-  display: none;
-}
+
 
 .flicker {
   animation-name: flicker;
