@@ -1,0 +1,47 @@
+/* Efecto tarjetas */
+.transUp{
+    transition: .4s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
+}
+.transUp:hover{
+    transform: translatey(-10px);
+        -webkit-transform: translatey(-10px);
+        -moz-transform: translatey(-10px);
+}
+
+/* Sombra y texto */
+.card-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+article a{
+    text-decoration: none;
+}
+
+article .card{
+    border: 2px solid var(--principal);
+    transition: 0.5;
+    transition: background-color 0.2s ease;
+    box-shadow:  19px 19px 38px #c1c1c1;
+
+}
+
+.card-body h5{
+    min-height: 50px;
+    min-width: 40px;
+    /* align-content: center; */
+}
+article .card:hover {
+    border-color: var(--acento);
+    filter: brightness(103%);
+    background-color: rgba(51, 185, 176, 0.2);
+}
+
+.puerta {
+    color: var(--acento);
+    font-size: 1.5em;
+    transition: all 0.3s;
+}
+
