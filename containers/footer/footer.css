@@ -2,13 +2,13 @@ a {
     cursor: pointer;
 }
 
-.linkContacto {
+.linkFooter {
     text-decoration: none;
     cursor: pointer;
 
 }
 
-.linkContacto:hover {
+.linkFooter:hover {
     text-decoration: underline;
     text-underline-position:under;
 }
