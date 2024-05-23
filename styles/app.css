@@ -35,6 +35,14 @@
   text-transform: uppercase;
 }
 
+.bg-medac {
+  background-color: var(--primary);
+}
+
+.txt-medac {
+  color: var(--primary)
+}
+
 }
 
 /* general section  */
