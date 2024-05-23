@@ -27,6 +27,7 @@
     color: var(--primary);
     font-weight: bold;
 
+
   }
 
 .h1c {
@@ -37,6 +38,9 @@
   font-family: "IBM Plex Sans", sans-serif, Calibri, "Trebuchet MS", sans-serif;
 
 }
+section {
+  padding-top: 5.2rem !important;
+}
 
 }
 
@@ -45,7 +49,7 @@
 
 .flicker {
   animation-name: flicker;
-  animation-duration: 1.7s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
 }
 
