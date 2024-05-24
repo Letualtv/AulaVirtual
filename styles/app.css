@@ -40,7 +40,11 @@
 section {
   padding-top: 5.2rem !important;
   padding-bottom: 3rem !important;
+  max-height: auto;
+  min-height: 95vh;
+
 }
+
 
 }
 
