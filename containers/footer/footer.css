@@ -1,14 +1,84 @@
 a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-.linkFooter {
-    text-decoration: none;
-    cursor: pointer;
 
+.buttonsFooter a:nth-child(1) {
+  background-color: #1877f2;
+}
+.buttonsFooter a:nth-child(2) {
+  background-color: #e4405f;
+}
+.buttonsFooter a:nth-child(3) {
+  background-color: #0a66c2;
+}
+.buttonsFooter a:nth-child(4) {
+  background-color: #000000;
+}
+.buttonsFooter a:nth-child(5) {
+  background-color: #cd201f;
+}
+.buttonsFooter a:nth-child(6) {
+  background-color: #ee1d51;
+}
+.buttonsFooter a:nth-child(1):hover {
+  background-color: white;
+  color: #1877f2 !important;
+}
+.buttonsFooter a:nth-child(2):hover {
+  background-color: white;
+  color: #e4405f !important;
+}
+.buttonsFooter a:nth-child(3):hover {
+  background-color: white;
+  color: #0a66c2 !important;
+}
+.buttonsFooter a:nth-child(4):hover {
+  background-color: white;
+  color: black !important;
+}
+.buttonsFooter a:nth-child(5):hover {
+  background-color: white;
+  color: #cd201f !important;
+}
+.buttonsFooter a:nth-child(6):hover {
+  background-color: white;
+  color: #ee1d51 !important;
+}
+.buttonsFooter a {
+  transition: transform 0.5s ease;
+}
+.buttonsFooter a i {
+  border-radius: 50%;
+
+  width: 15px;
+  height: 27px;
+}
+.fa-brands {
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 
-.linkFooter:hover {
-    text-decoration: underline;
-    text-underline-position:under;
+.buttonsFooter a:hover {
+  transform: scale(1.1);
+}
+.linksFooter a::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        bottom: -10%;
+        left: 0;
+        background-color: var(--acento-hover);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+}
+.linksFooter a:hover::before{
+        transform: scaleX(1.1);
+}
+.linksFooter a {
+        position: relative;
+        text-decoration: none;
 }

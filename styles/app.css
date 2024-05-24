@@ -27,7 +27,6 @@
     color: var(--primary);
     font-weight: bold;
 
-
   }
 
 .h1c {
@@ -40,6 +39,7 @@
 }
 section {
   padding-top: 5.2rem !important;
+  padding-bottom: 3rem !important;
 }
 
 }
