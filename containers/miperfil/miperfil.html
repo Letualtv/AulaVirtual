@@ -1,43 +1,51 @@
 <section><h1 class="h1c container-fluid">Mi perfil</h1>
 <hr>
-<div class="container">
-    <div class="row h-50">
-        <div class="col-12 col-md-6 col-lg-2  me-auto  mx-auto text-center d-flex border-end">
-            <div class="d-flex flex-column text-center pt-2 p-3 mx-auto">
-                <img class=" border border-black border-3 ratio ratio-1x1 border-secondary bg-light " width="180px"
+<div class="container ">
+    <div class="row d-flex justify-content-evenly align-items-center">
+        <div class="col-8 col-md-6 col-lg-4  me-auto  mx-auto text-center d-flex">
+            <div class="d-flex flex-column text-center p-3 mx-auto  col-12 col-lg-10">
+                <div class="hovereffect ">
+                <img class="img-fluid ratio ratio-1x1 img-thumbnail" 
                     src="assets\pics\gustavito.webp" alt="Foto de perfil">
-                <p class="pt-1 "><a class="text-black" href="">Cambiar foto</a></p>
+                    <div class="overlay d-none d-lg-block">
+                        <button class="cambioFoto btn btn-primary p-2 "href="#">Cambiar foto</button>
+                     
+                     </div>  
+                     <button class=" btn btn-primary p-2 d-lg-none d-md-block mt-3 mx-auto" href="#">Cambiar foto</button>
+                     </div>
             </div>
+<div class="border-end d-none d-lg-block">
 
+</div>
 
         </div>
 
 
-        <div class="col-12 col-md-6 col-lg-10">
+        <div class="col-12 col-md-6 col-lg-8 ps-lg-4">
             <dl class="row">
-                <dt class="col-sm-3 col-lg-2"><i class="fa-regular fa-user pe-2"></i>Nombre:</dt>
-                <dd class="col-sm-9">Gustavo Alonso de todos los Santos Pérez Díaz</dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-regular fa-user pe-2"></i>Nombre:</dt>
+                <dd class="col-sm-8">Gustavo Alonso de todos los Santos Pérez Díaz</dd>
 
-                <dt class="col-sm-3 col-lg-2"><i class="fa-regular fa-address-card pe-2"></i>DNI:</dt>
-                <dd class="col-sm-9 ">12345678-A</dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-regular fa-address-card pe-2"></i>DNI:</dt>
+                <dd class="col-sm-8 ">12345678-A</dd>
 
-                <dt class="col-sm-3 col-lg-2"><i class="fa-solid fa-mobile-screen pe-2"></i>Teléfono</dt>
-                <dd class="col-sm-9">+34 123 45 67 89</dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-solid fa-mobile-screen pe-2"></i>Teléfono</dt>
+                <dd class="col-sm-8">+34 123 45 67 89</dd>
 
-                <dt class="col-sm-3 col-lg-2"><i class="fa-solid fa-house pe-2"></i>Ciudad:</dt>
-                <dd class="col-sm-9"><p>Córdoba, Andalucía.</p></dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-solid fa-house pe-2"></i>Ciudad:</dt>
+                <dd class="col-sm-8"><p>Córdoba, Andalucía.</p></dd>
                 
 
 
 
 
-                <dt class="col-sm-3 col-lg-2"><i class="fa-solid fa-book pe-2"></i>Especialidad:</dt>
-                <dd class="col-sm-9">Grado Superior en Higiene Bucodental</dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-solid fa-book pe-2"></i>Especialidad:</dt>
+                <dd class="col-sm-8">Grado Superior en Higiene Bucodental</dd>
 
-                <dt class="col-sm-3 col-lg-2"><i class="fa-regular fa-envelope pe-2"></i>E-mail</dt>
-                <dd class="col-sm-9">gtv007@alu.medac.es</dd>
-                <dt class="col-sm-3 col-lg-2"><i class="fa-solid fa-school pe-2"></i>Centro de estudios:</dt>
-                <dd class="col-sm-9">
+                <dt class="col-sm-4 col-lg-3"><i class="fa-regular fa-envelope pe-2"></i>E-mail</dt>
+                <dd class="col-sm-8">gtv007@alu.medac.es</dd>
+                <dt class="col-sm-4 col-lg-3"><i class="fa-solid fa-school pe-2"></i>Centro de estudios:</dt>
+                <dd class="col-sm-8">
                     <dl class="d-flex justify-content-start">
                         <dd >MEDAC Arena</dd>
                         <div class="vr mx-2"></div>
@@ -45,6 +53,10 @@
                     </dl>
                 </dd>
             </dl>
+            <div class="d-flex justify-content-evenly justify-content-lg-start gap-lg-4 col-12 col-lg-6">
+            <a class="btn btn-success" href="">Cambiar contraseña</a>
+<a class="btn btn-danger" href="">Cerrar sesión</a>
+</div>
         </div>
 
 
