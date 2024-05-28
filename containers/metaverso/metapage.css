@@ -1,5 +1,5 @@
 /* Efecto tarjetas */
-.transUp{
+/* .transUp{
     transition: .4s, color .10s;
         -webkit-transition: .5s, color .10s;
         -moz-transition: .5s, color .10s;
@@ -8,7 +8,7 @@
     transform: translatey(-10px);
         -webkit-transform: translatey(-10px);
         -moz-transform: translatey(-10px);
-}
+} */
 
 /* Sombra y texto */
 .card-title {
@@ -30,8 +30,8 @@ article .card{
 
 .card-body h5{
     min-height: 50px;
-    min-width: 40px;
-    /* align-content: center; */
+
+ align-content: center;
 }
 article .card:hover {
     border-color: var(--acento);
