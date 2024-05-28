@@ -1,5 +1,5 @@
 /* Efecto tarjetas */
-/* .transUp{
+.transUp{
     transition: .4s, color .10s;
         -webkit-transition: .5s, color .10s;
         -moz-transition: .5s, color .10s;
@@ -8,7 +8,7 @@
     transform: translatey(-10px);
         -webkit-transform: translatey(-10px);
         -moz-transform: translatey(-10px);
-} */
+}
 
 /* Sombra y texto */
 .card-title {
@@ -24,7 +24,7 @@ article .card{
     border: 2px solid var(--principal);
     transition: 0.5;
     transition: background-color 0.2s ease;
-    box-shadow:  19px 19px 38px #c1c1c1;
+    box-shadow:  10px 10px 20px #c1c1c1;
 
 }
 
