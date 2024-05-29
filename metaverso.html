@@ -38,7 +38,9 @@
 
   <body>
     <!-- ENLACE COMPONENTES -->
-    <include src="containers/navbar/navbar.html"></include>
+    <div id="container-navbar">
+      <include src="containers/navbar/navbar.html"></include>
+    </div>
     <div id="container-metaverso">
       <include src="containers/metaverso/metapage.html"></include>
     </div>
@@ -126,7 +128,26 @@
           });
       });
     </script>
-    
+    <!-- Script Mensaje Correo -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("containers/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("container-navbar").innerHTML = data;
+            
+          const toastTrigger = document.getElementById('liveToastBtn')
+          const toastLiveExample = document.getElementById('liveToast')
+
+          if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+              toastBootstrap.show()
+            });
+          };
+        });
+      });
+  </script>
   </body>
 
   <!-- Desarrollado por Antonio y Julián -->

@@ -48,7 +48,9 @@
 
 
   <!-- ENLACE COMPONENTES -->
-  <include src="containers/navbar/navbar.html"></include>
+  <div id="container-navbar">
+    <include src="containers/navbar/navbar.html"></include>
+  </div>
   <div id="include-container">
     <include src="containers/miperfil/miperfil.html"></include>
   </div>
@@ -60,6 +62,26 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+    <!-- Script Mensaje Correo -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("containers/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("container-navbar").innerHTML = data;
+            
+          const toastTrigger = document.getElementById('liveToastBtn')
+          const toastLiveExample = document.getElementById('liveToast')
+
+          if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+              toastBootstrap.show()
+            });
+          };
+        });
+      });
+  </script>
 </body>
 
 

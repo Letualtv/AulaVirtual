@@ -59,7 +59,9 @@
 
   
     <!-- ENLACE COMPONENTES -->
-    <include src="containers/navbar/navbar.html"></include> 
+    <div id="container-navbar">
+      <include src="containers/navbar/navbar.html"></include>
+    </div>
 <include src="containers\documentacion\normativa\normas.html"></include>
 <include src="containers/footer/footer.html"></include>
 
@@ -71,6 +73,26 @@
       crossorigin="anonymous"
     ></script> 
 
+    <!-- Script Mensaje Correo -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("containers/navbar/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("container-navbar").innerHTML = data;
+            
+          const toastTrigger = document.getElementById('liveToastBtn')
+          const toastLiveExample = document.getElementById('liveToast')
+
+          if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+              toastBootstrap.show()
+            });
+          };
+        });
+      });
+  </script>
 
   </body> 
 
