@@ -1,25 +1,53 @@
 <!-- Navbar -->
 <nav class="navbar bg-medac fixed-top">
   <div class="container-fluid">
-    <button class="navbar-toggler border-white px-3 py-2" type="button" data-bs-toggle="offcanvas"
+    <button class="navbar-toggler border-white px-3 py-2" type="button"
+      data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <i class="fa-solid fa-bars fa-1x" style="color: #ffffff;"></i>
     </button>
     <a class="navbar-brand d-flex mx-md-auto ms-auto" href="#">
-      <img class="col-12" style="max-width: 200px;" src="assets\logo-vector\MEDAC_imagotipo_horiz_blanco_RGB.svg"
+      <img class="col-12" style="max-width: 200px;"
+        src="assets\logo-vector\MEDAC_imagotipo_horiz_blanco_RGB.svg"
         alt="Logotipo Medac" />
     </a>
 
     <!-- Panel usuario  -->
     <div class="d-none d-md-flex mx-end dropdown mx-2">
-      <a class="nav-link dropdown-toggle link-light" href="#" id="miPerfil" role="button" data-bs-toggle="dropdown"
+      <!-- Correo -->
+      <a class="nav-link link-light" href="#" id="liveToastBtn"
+        role="button">
+        <i class="fa-regular fa-envelope fa-1x mx-2 p-2 border-white rounded-circle border"></i>
+      </a>
+      <div class="toast-container position-fixed top-5 end-0 p-5">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+          aria-atomic="true">
+          <div class="toast-header">
+            <i class="fa-regular fa-envelope fa-1x mx-2 p-2 border-white rounded-circle border blue"></i>
+            <strong class="me-auto blue">Gustavo</strong>
+            <small>Hace 2 minutos</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            No hay mensajes sin leer.
+          </div>
+        </div>
+      </div>
+      <!-- Perfil -->
+      <a class="nav-link dropdown-toggle link-light" href="#" id="miPerfil"
+        role="button" data-bs-toggle="dropdown"
         aria-expanded="false">
-        <i class="fa-solid fa-user fa-1x mx-2 p-2 border-white rounded-circle border"></i>
+        <i
+          class="fa-solid fa-user fa-1x mx-2 p-2 border-white rounded-circle border"></i>
         Gustavo
       </a>
-      <ul class="dropdown-menu dropdown-menu-end me-1" aria-labelledby="miPerfil">
+
+      <ul class="dropdown-menu dropdown-menu-end me-1"
+        aria-labelledby="miPerfil">
         <div class="d-flex flex-column text-center mt-2" style="width: 250px;">
-          <img class="rounded-pill mx-auto col-6" src="assets\pics\gustavito.webp" alt="" />
+          <img class="rounded-pill mx-auto col-6"
+            src="assets\pics\gustavito.webp" alt />
 
           <li class="pt-2 h4" style="
               -webkit-user-select: none;
@@ -35,8 +63,11 @@
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <a type="button" class="col-10 btn btn-outline-primary mx-auto mt-3 mb-1" href="perfil.html">Mi cuenta</a>
-          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button"
+          <a type="button"
+            class="col-10 btn btn-outline-primary mx-auto mt-3 mb-1"
+            href="perfil.html">Mi cuenta</a>
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+            type="button"
             class="col-10 btn btn-outline-danger mx-auto mb-3" href="#">
             Cerrar sesión
           </button>
@@ -45,21 +76,25 @@
     </div>
 
     <!-- Offcanvas -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
       </div>
       <ul>
-        <div class="">
+        <div class>
           <img class="mx-auto d-block" style="max-width: 200px;"
-            src="assets\logo-vector\MEDAC_isologo_aureo_azul_RGB.svg" alt="Logotipo Medac" />
+            src="assets\logo-vector\MEDAC_isologo_aureo_azul_RGB.svg"
+            alt="Logotipo Medac" />
         </div>
       </ul>
 
       <div class="offcanvas-body text-bold">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link mx-2 txt-medac" aria-current="page" href="index.html">
+            <a class="nav-link mx-2 txt-medac" aria-current="page"
+              href="index.html">
               <i class="fa-solid fa-house fa-1x mx-2"></i>
               Inicio
             </a>
@@ -79,30 +114,36 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mx-2 txt-medac" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle mx-2 txt-medac" href="#"
+              role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <i class="fa-solid fa-book fa-1x mx-2"></i>
               Documentación
             </a>
             <ul class="dropdown-menu border-0">
-              <li><a class="dropdown-item mx-4" href="tutoriales.html">Tutoriales</a></li>
-              <li><a class="dropdown-item mx-4" href="normativa.html">Normativa</a></li>
+              <li><a class="dropdown-item mx-4"
+                  href="tutoriales.html">Tutoriales</a></li>
+              <li><a class="dropdown-item mx-4"
+                  href="normativa.html">Normativa</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle mx-2 txt-medac d-md-none" href="#" role="button" data-bs-toggle="dropdown"
+            <a class="nav-link dropdown-toggle mx-2 txt-medac d-md-none"
+              href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
               <i class="fa-solid fa-user fa-1x mx-2"></i>
               Mi cuenta
             </a>
-            <ul class="dropdown-menu border-0"> 
-              <li><a class="dropdown-item mx-4 txt-medac" href="#">Perfil</a></li>
-              <li><a class="dropdown-item mx-4" style="color: red" href="#">Cerrar sesión</a></li>
+            <ul class="dropdown-menu border-0">
+              <li><a class="dropdown-item mx-4 txt-medac"
+                  href="#">Perfil</a></li>
+              <li><a class="dropdown-item mx-4" style="color: red"
+                  href="#">Cerrar sesión</a></li>
             </ul>
           </li>
+        </div>
       </div>
     </div>
-  </div>
+ <script>
 
-
-  <script src="/script.js"></script>
+ </script>
